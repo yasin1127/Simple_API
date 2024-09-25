@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:elevation="15dp"
+    app:cardMaxElevation="15dp"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        android:elevation="15dp"
+        app:cardMaxElevation="15dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@+id/MemeImg"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/MemeAuthor"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/MemeTitle"
+                />
+
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOAD NEXT MEME"
+                android:layout_gravity="center"
+                android:backgroundTint="#32C832"
+                android:layout_marginTop="30dp"
+                app:cornerRadius="15dp"
+                app:strokeColor="#100F0F"
+                app:strokeWidth="2dp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
